@@ -1,0 +1,182 @@
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/To_The_Moon-2.0-SCSS_Remaster/media-assets/astronaut-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 43% ; 
+}
+
+.trigger {
+    position: absolute;
+    display: block;
+    margin-top: 5vh; 
+    margin-left: 90vw;
+    z-index: 25;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.trigger:checked ~ .menu {
+    visibility: visible;
+}
+
+.trigger:checked ~ .navbut :nth-child(1){
+    transform: rotate(45deg);
+}
+
+.trigger:checked ~ .navbut :nth-child(2){
+    visibility: hidden;
+    transition: none;
+}
+
+.trigger:checked ~ .navbut :nth-child(3){
+    transform: rotate(-45deg);
+    top: -4.5vw;    
+}
+
+.scroll {
+    position: fixed;
+    z-index: 25;
+}
+
+.navbut {
+    position: absolute;
+    margin-top: 5vh; 
+    margin-left: 90vw;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+.navbut span {
+    width: 7vw;
+    height: 0.9vw;
+    margin-top: 1.2vw;
+    border-radius: 1.3vw;
+    display: block;
+    border: solid white 0.15vw;
+    background-color: black;
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 19;
+}
+
+.navbut :nth-child(2n) {
+    left: -1vw;
+}
+
+.navbut:hover span:nth-child(2n) {   
+    left: 0vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.8);   
+    z-index: 16;
+}
+
+.menuitems li {
+    position: relative; 
+    text-align: center;
+    margin:15vh;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-around;
+    z-index: 16;
+}
+ 
+.menuitems a {
+    color: black;
+    text-decoration: none;
+    font-size: 6vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0vw 0.5vw rgba(0, 0, 0, 0.144);
+    background: transparent;
+    border-radius: 0.05em;
+    height: 1vw;
+    z-index: 16;
+}
+
+.menuitems a:hover:after{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: rgb(205, 0, 103);
+    border-radius: .1em;
+}
+
+.herosquare {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 25vw;
+    width: 25vw;
+    border-style: solid;
+    border-width: 0.4vw;
+    left: 5vw;
+    top: 5vw;
+    z-index: 10;
+}
+
+.herotxt h1 {
+    margin-top: 10%;
+    font-weight: 700;
+    font-size: 6vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.story {
+    height: 8vw;
+    display: flex; 
+    align-self: flex-end;
+    justify-content: right;
+    font-size: 1.5vw;
+}
+
+.story p {
+    left: 5vw;
+    padding: 1vw 0.5vw;
+    align-self: flex-end;
+}
+
+.story a {
+    position: relative;
+    padding-left: 0.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vw;
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
+    left:0;
+    transition: all 0.3s ease-in-out; 
+}
+
+.story a:hover {
+    left: 1vw;
+}
+
+.arrowdown {
+    position: absolute;
+    padding-top: 85vh;
+    padding-left: 50vw;
+    font-size: 10vh;
+    color: white;
+    visibility:hidden ;
+}
+
+

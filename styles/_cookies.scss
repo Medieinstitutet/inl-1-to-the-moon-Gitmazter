@@ -1,0 +1,38 @@
+/* COOOOOOOKIES */
+
+#cookie_banner {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5vw;
+    width: 100%;
+    background-color: rgb(2,6,31);
+    color: rgb(205, 0, 103);
+    text-shadow: .1vw .1vw .2vw rgba(174, 102, 138, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.cookie_close {
+    justify-self: center;
+    background-color: rgb(8,17,96);
+    color: white;
+    border: none;
+    height: 2.4vw;
+    width: 6vw;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin: 1.5vw 2vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.cookie_txt {
+    font-size: 1vw;
+    margin-left: 3vw;
+    margin-right: auto;
+}
+

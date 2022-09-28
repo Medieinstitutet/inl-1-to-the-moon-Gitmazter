@@ -1,0 +1,63 @@
+/* DISPLAY FOR WIDTH UP TO PHONE MAX 450PX */
+@media screen and (max-width:450px) {
+
+    .trigger:checked ~ .navbut :nth-child(3){
+        transform: rotate(-45deg);
+        top: -9vw;    
+    }
+
+    .navbut {
+        left:-8vw;
+    }
+
+    .navbut :nth-child(2n) {
+        left: -2vw;
+    }
+    
+    .navbut span {
+        width: 14vw;
+        height: 1.8vw;
+        margin-top: 2.4vw;
+        border-radius: 2.6vw;
+    }
+
+    .content{
+        background-size: 100vw 110vh;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .content_filter {
+        height: 100vh;
+    }
+
+    .cookie_close {
+        font-size: 4vw;
+    }
+
+    .arrowdown {
+        visibility: visible;
+    }
+
+    .herosquare {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .herosquare h1 {
+        font-size: 12vw;
+    }
+
+    .story {
+        bottom:0;
+    }
+
+    .story {
+        font-size: 5vw;
+        margin-top: auto;        
+    }
+
+    .mobonly {
+        display:initial;
+    }
+}

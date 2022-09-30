@@ -1,0 +1,99 @@
+/* DISPLAY FOR WIDTH UP TO TABLET MAXIMUM 850PX */
+@media screen and (max-width: 850px) {
+
+    .content{
+        background-image:url("/To_The_Moon-2.0-SCSS_Remaster/media-assets/stars-min.jpg");
+        background-size: 100vw 160vh;
+        height: fit-content;
+        background-repeat: repeat-y;
+        flex-direction: column;
+    }
+    .content_filter {
+        height: fit-content;
+    }
+    .spaceventures{
+        padding-left: 13vw;
+    }
+
+    .space{
+        font-size: 12.2vw;
+    }
+
+    .ventures {
+        font-size: 16vw;
+        top:-9vw;
+    }
+
+    .heading{
+        font-size: 5vw;
+    }
+
+    main p{
+        font-size: 3vw;
+    }
+
+    .quote{
+        font-size: 4.2vw;
+        padding: 2vw 2vw;
+    }
+
+    .aone{
+        padding-bottom: 0;
+    }
+
+    .atwo{
+        padding-top: 0;
+    }
+
+    .tom {
+        display: none;
+    }
+
+    blockquote {
+        display: none;
+    }
+
+    .tom_link a{
+        font-size:3vw;
+    }
+
+    #cookie_banner {
+        height: 15vw;
+    }
+    
+    .cookie_txt {
+        padding: 0 1vw;
+        font-size: 3vw;
+    }
+
+    .cookie_close {
+        height: 15vw;
+        font-size: 3vw;
+        width: 30vw;
+        margin: 0;
+    }
+
+    .arrowdown {
+        visibility: visible;
+    }
+
+    .herosquare {
+        height: 40vw;
+        width: 40vw;
+        border-width: 0.8vw;
+    }
+
+    .herosquare h1 {
+        font-size: 10vw;
+    }
+
+    .story {
+        font-size: 4vw;
+        margin-top: auto;
+    }
+
+    .mobonly {
+        display: initial;
+    }
+}
+

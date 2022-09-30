@@ -1,0 +1,97 @@
+/* CONTENT PAGE  */
+
+.content {
+    background-image: url("/To_The_Moon-2.0-SCSS_Remaster/media-assets/stars_90deg-min.jpg") ;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100vw;    
+    min-height: 100vh;
+    display: flex;
+    z-index: 1;
+}
+
+.content_filter {
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.space {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.2vw 0.2vw 0.2vw #141414;
+    position: relative;
+    font-size: 6.1vw;
+    z-index: 11;
+}
+
+.ventures {
+    position: relative;
+    top: -4.2vw;
+    right: -0.1vw;
+    font-size: 8vw;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 70%;
+    z-index: 10;
+}
+
+main article {
+    padding: 5vh 5vw;
+    z-index: 10;
+}
+
+main h3 {
+    padding: 2vh 0vw;
+}
+
+.heading {
+    font-size:2vw ;
+}
+
+
+article p {
+    flex-wrap: wrap;
+    font-size: 1.2vw;
+    padding-top: 0.5vw;
+}
+
+.quote {
+    display: block;
+    font-size: 2vw;
+    padding: 2vw 3vw;
+}
+
+blockquote { 
+    font-size: 2.5vw;
+    padding: 1vw 4vw;
+    font-style: italic;
+    background: -webkit-radial-gradient(rgba(238, 238, 238, 0.707), rgba(205, 0, 103, 0.4));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tom {
+    padding: 2vw;
+    height: 20vh;
+    float: right;
+    transform: rotate(7deg);
+}
+
+.tom_link {
+    display:flex;
+    align-items: center;
+}
+
+.tom_link a {
+    color: rgb(205, 0, 103);
+    font-size: 1.3vw;
+}
+
+.mobonly {
+    display: none;
+}

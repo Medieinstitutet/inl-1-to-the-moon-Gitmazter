@@ -1,0 +1,31 @@
+/* GLOBAL SETTINGS */
+
+* {
+    margin:0%;
+    font-family: Rubik, sans-serif;
+}
+
+/* Variables */
+
+    $pink: rgb(205, 0, 103);
+
+/*HEADER*/
+
+    @import './header';
+
+/* CONTENT PAGE  */
+
+    @import './content';
+
+/* COOOOOOOKIES */
+
+    @import './cookies';
+
+
+/* DISPLAY CUSTOMIZATIONS FOR WIDTH UP TO TABLET MAXIMUM 850PX */
+
+    @import './tablet';
+
+/* DISPLAY FOR WIDTH UP TO PHONE MAX 450PX */
+
+    @import'./mobile';
